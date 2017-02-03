@@ -1,12 +1,14 @@
 import random
 def generate_list() :
     alist = [x for x in range(random.randint(-10, 10)) ]
+    assert alist is not None
+    assert (sum(alist)<100) 
     return alist
     
 """
 print a generated list
 """
-def printIt() 
+def printIt() :
     print( generate_list() )
     
 def main() :
